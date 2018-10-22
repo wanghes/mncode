@@ -11,15 +11,15 @@
 	<meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="renderer" content="webkit">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="/images/favicon.png">
+    <link rel="icon" sizes="192x192" href="/static/images/favicon.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="码农技术">
-    <link rel="apple-touch-icon-precomposed" href="/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/images/favicon.png">
     <link rel="stylesheet" href="/static/css/font-awesome.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/prettify.css">
