@@ -8,8 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 	<title><?php echo $title.'-码农技术'; ?></title>
-	<meta name="keywords" content="">
-    <meta name="description" content="">
+	<meta name="keywords" content="<?php echo $keywords; ?>">
+    <meta name="description" content="<?php echo $keycontents; ?>">
     <meta name="renderer" content="webkit">
     <link rel="icon" type="image/png" href="/static/images/favicon.png">
     <!-- Add to homescreen for Chrome on Android -->
@@ -22,8 +22,9 @@
     <link rel="apple-touch-icon-precomposed" href="/static/images/favicon.png">
     <link rel="stylesheet" href="/static/css/font-awesome.css">
     <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/prettify.css">
+    <!-- <link rel="stylesheet" href="/static/css/prettify.css"> -->
     <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/js/highlightJS/highlightJS/styles/github.css">
     <script src="/static/js/common_tpl.js"></script>
     <script src="/static/js/swiper.min.js"></script>
 </head>
@@ -67,27 +68,3 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 clearfix">
-                <div class="main-left">
-                    <div id="J_main_left">
-                        <div class="side-nav">
-                            <ul>
-                                <?php if(isset($news)): ?>
-                                <?php foreach ($news as $item): ?>
-                                <li><a href="/index/detail/<?php echo $item['cate'].'/'.$item['id']; ?>"><i class="fa fa-file-text"></i><?php echo $item['title']; ?></a></li>
-                                <?php endforeach; ?>
-                                <?php endif; ?>
-                            </ul>
-                        </div>
-                        <div class="side-box">
-                            <h5 class="sidebar-title">热门标签</h5>
-                            <div class="sidebar-tag clearfix">
-                                <?php foreach ($labels as $item): ?>
-                                <a href="/index/label/<?php echo $item['id']; ?>"><?php echo $item['name']; ?></a>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>

@@ -157,9 +157,13 @@ dd {
 }
 
 blockquote {
-	margin: 0 0 1em;
+    margin: 0 0 10px;
+    padding: 10px 15px 1px;
+    background: #f8f8f8;
+	color:#333;
+    border: 1px solid #f1f1f1;
+	border-left: 6px solid #e4e4e4;
 }
-
 dfn {
 	font-style: italic;
 }
@@ -238,7 +242,7 @@ a:hover {
 
 pre,code,kbd,samp {
 	font-family: Consolas,monaco,monospace;
-	font-size: 1em;
+	font-size: 12px;
 }
 
 pre {
@@ -706,6 +710,172 @@ iframe {
 		display: none !important;
 	}
 }
+
+.label,
+.badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+}
+
+.label {
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.badge {
+  padding-right: 9px;
+  padding-left: 9px;
+  -webkit-border-radius: 9px;
+     -moz-border-radius: 9px;
+          border-radius: 9px;
+}
+
+.label:empty,
+.badge:empty {
+  display: none;
+}
+
+a.label:hover,
+a.label:focus,
+a.badge:hover,
+a.badge:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.label-important,
+.badge-important {
+  background-color: #b94a48;
+}
+
+.label-important[href],
+.badge-important[href] {
+  background-color: #953b39;
+}
+
+.label-warning,
+.badge-warning {
+  background-color: #f89406;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+
+.label-success,
+.badge-success {
+  background-color: #468847;
+}
+
+.label-success[href],
+.badge-success[href] {
+  background-color: #356635;
+}
+
+.label-info,
+.badge-info {
+  background-color: #3a87ad;
+}
+
+.label-info[href],
+.badge-info[href] {
+  background-color: #2d6987;
+}
+
+.label-inverse,
+.badge-inverse {
+  background-color: #333333;
+}
+
+.label-inverse[href],
+.badge-inverse[href] {
+  background-color: #1a1a1a;
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.alert,
+.alert h4 {
+  color: #c09853;
+}
+
+.alert h4 {
+  margin: 0;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 20px;
+}
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-success h4 {
+  color: #468847;
+}
+
+.alert-danger,
+.alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.alert-danger h4,
+.alert-error h4 {
+  color: #b94a48;
+}
+
+.alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-info h4 {
+  color: #3a87ad;
+}
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+
+.alert-block p + p {
+  margin-top: 5px;
+}
+
 
 .btn {
 	display: inline-block;
@@ -1359,6 +1529,9 @@ a.text-primary:focus,a.text-primary:hover {
 	.header-nav-list li a:hover {
 		background-color: #f1f3f5;
 	}
+	.header-nav-list li.active a{
+		background-color: #4a0202;
+	}
 
 	.header-nav-list .nav-arrow {
 		position: absolute;
@@ -1439,6 +1612,9 @@ a.text-primary:focus,a.text-primary:hover {
 	}
 
 	.header-nav-list li a:hover {
+		background-color: #4a0202;
+	}
+	.header-nav-list li.active a{
 		background-color: #4a0202;
 	}
 
@@ -1659,6 +1835,7 @@ a.text-primary:focus,a.text-primary:hover {
 
 .echo-info .t-info {
 	color: #868e96;
+	margin-bottom: 10px;
 }
 
 .echo-info .t-info span {
@@ -1679,13 +1856,13 @@ a.text-primary:focus,a.text-primary:hover {
 }
 
 .echo-article {
-	font-size: 16px;
-	line-height: 1.75;
+	font-size: 14px;
+	line-height: 1.65;
 	word-wrap: break-word;
 }
 
 .echo-article p {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .echo-article i,.echo-article em {
@@ -2119,7 +2296,13 @@ a.text-primary:focus,a.text-primary:hover {
 
 .side-nav li a {
 	display: block;
-	padding: 10px 25px;
+	padding: 10px;
+	width: 178px;
+	box-sizing: border-box;
+	height: 41px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
 }
 
 .side-nav li a:hover {

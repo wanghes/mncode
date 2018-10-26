@@ -1,5 +1,5 @@
 <?php
-class Cate_model extends CI_Model {
+class Label_model extends CI_Model {
 
     public function __construct()
     {
@@ -7,11 +7,11 @@ class Cate_model extends CI_Model {
     }
 
     public function getItems() {
-    	$query = $this->db->query("select * from cates");
+    	$query = $this->db->query("select * from labels");
     	return $query->result_array();
     }
 
-    
+
 
 }
 

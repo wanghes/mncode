@@ -1,3 +1,20 @@
+                <div class="main-right">
+                    <div class="sidebar-box">
+                        <h5 class="sidebar-title"><i class="fa fa-bars"></i>热门文章</h5>
+                        <div class="sidebar-log">
+                            <ul>
+                                <?php foreach ($hots as $item): ?>
+                                    <li>
+                                        <a href="/index/detail/<?php echo $item['cate'].'/'.$item['id']; ?>"><?php echo $item['title']; ?></a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer-wrap">
         <div class="container">
             <div class="row">
@@ -12,7 +29,7 @@
                     </div>
                     <div class="footer-right">
                         <ul>
-                            <li>© 2018 广告联盟大事记2.0</li> 
+                            <li>© 2018 码农技术博客</li>
                         </ul>
                     </div>
                 </div>

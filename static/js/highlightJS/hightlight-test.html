@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	
+	<link rel="stylesheet" type="text/css" href="highlightJS/styles/github.css">
+
+</head>
+<body style="padding:20px;">
+
+	<a href="https://highlightjs.org/download/">
+		https://highlightjs.org/download/
+	</a>
+
+	<hr>
+	
+	<pre><code class="javascript">
+//console.log(window.hljs.listLanguages());
+//console.log(window.hljs);
+$('pre code').each(function(i, block) {
+	hljs.highlightBlock(block);
+});
+	</code></pre>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="highlightJS/highlight.pack.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		//console.log(window.hljs.listLanguages());
+		//console.log(window.hljs);
+		// cdn http://www.bootcdn.cn/highlight.js/
+		$('pre code').each(function(i, block) {
+	    	hljs.highlightBlock(block);
+	  	});
+	});
+	</script>
+</body>
+</html>
+insert into articles(title,shareid,pic,author,pubtime,detail,labels,keywords,description,cate) values('前言相信目前常与 Es6 ','post-link-1477288189','/upload/default.jpg','赤云魔尊','2016-10-24','<p><span style="color: rgb(170, 170, 170); font-size: 16px;">前言相信目前常与 Es6&nbsp;</span><span style="color: rgb(170, 170, 170); font-size: 16px;">前言相信目前常与 Es6&nbsp;</span><br></p><pre><code class="lang-js">$(#sidebar .sidebar-toggle).click(function(){if($(#sidebar).hasClass(expend))$(#sidebar).removeClass(expend); else &nbsp;$(#sidebar).addClass(expend);});</code></pre>','[1]','前言相信目前常与 Es6, 前言相信目前常与 Es6, 前言相信目前常与 Es6','前言相信目前常与 Es6 前言相信目前常与 Es6 前言相信目前常与 Es6 ','2')
