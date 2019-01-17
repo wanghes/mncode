@@ -1885,6 +1885,10 @@ a.text-primary:focus,a.text-primary:hover {
 	list-style: disc outside;
 }
 
+.echo-article ul li a{
+	color: #006fb7; 
+}
+
 .echo-article ol li {
 	list-style: decimal outside;
 }
