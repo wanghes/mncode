@@ -1,26 +1,25 @@
-    <div class="footer-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 clearfix">
-                    <div class="footer-left">
-                        <ul>
-                            <li><a href="#" target="_blank">码农技术</a></li>
-                            <li><a href="#" target="_blank">关于我们</a></li>
-                            <li><a href="#" target="_blank">sitemap</a></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="footer-right">
-                        <ul>
-                            <li>© 2018 广告联盟大事记2.0</li>
-                        </ul>
-                    </div>
+<div class="footer-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 clearfix">
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="#" target="_blank">码农技术</a></li>
+                        <li><a href="#" target="_blank">关于我们</a></li>
+                        <li><a href="#" target="_blank">sitemap</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li>© 2018 码农技术博客</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <a class="am-backtop"><i class="fa fa-angle-up"></i></a>
-
+</div>
+<a class="am-backtop"><i class="fa fa-angle-up"></i></a>
 <script src="/static/js/highlightJS/highlightJS/highlight.pack.js"></script>
 <script>
     jQuery(document).ready(function($) {
@@ -38,7 +37,7 @@
             hljs.highlightBlock(block);
         });
 
-        !function(o) {
+        ! function(o) {
             "use strict";
             o.fn.toTop = function(t) {
                 var i = this,
@@ -73,7 +72,8 @@
             d = 2;
         a.browser.msie && 6 == a.browser.version && !a.support.style || (e = a("#J_main_left").width(), f = a("#J_main_left .side-box"), g = f.length, g >= (c > 0) && g >= (d > 0) && a(window).scroll(function() {
             var b = document.documentElement.scrollTop + document.body.scrollTop;
-            b > f.eq(g - 1).offset().top + f.eq(g - 1).height() ? 0 == a(".roller").length ? (f.parent().append('<div class="roller"></div>'), f.eq(c - 1).clone().appendTo(".roller"), c !== d && f.eq(d - 1).clone().appendTo(".roller"), a(".roller").css({
+            b > f.eq(g - 1).offset().top + f.eq(g - 1).height() ? 0 == a(".roller").length ? (f.parent().append('<div class="roller"></div>'), f.eq(c - 1).clone().appendTo(".roller"), c !== d && f.eq(d - 1).clone().appendTo(
+                ".roller"), a(".roller").css({
                 position: "fixed",
                 top: 0,
                 zIndex: 999
@@ -83,4 +83,5 @@
 </script>
 
 </body>
+
 </html>
