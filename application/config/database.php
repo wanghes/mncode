@@ -74,10 +74,10 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:dbname=mncode;host=localhost',
+	'dsn'	=> 'mysql:dbname=mncode;host=127.0.0.1',
 	'hostname' => '',
 	'username' => 'root',
-	'password' => 'yinrenlei00',
+	'password' => 'klosdfar',
 	'database' => 'mncode',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
